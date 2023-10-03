@@ -26,8 +26,19 @@ $(function () {
   var currentHour = dayjs().hour() // gets current hour
   $('.time-block').each(function () {
     // this returns the element that the function is attached to. if you get confused console.log(this)
-    var timeBlockHour = $(this)
+    var timeBlockHour = parseInt($(this).attr('id').split('-')[1])
+    console.log(timeBlockHour);
+    if (timeBlockHour < currentHour) {
+      $(this).addClass('past');
+    } else if (timeBlockHour === currentHour) {
+      $(this).addClass('present');
+    } else {
+      $(this).addClass('future');
+    }
   })
+
+
+
 
 
   // TODO: Add code to get any user input that was saved in localStorage and set
