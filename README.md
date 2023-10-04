@@ -7,7 +7,7 @@ We also provided the ability to save a new event, to local-storage, and recall s
 
 ## Repository
 
-Link to deployed code:
+Link to deployed code: file:///Users/brianmaher/bootcamp/activities/classwork/05-Third-Party-APIs_COPY/02-Challenge/DayByDay/index.html
 
 ## Technologies
 
